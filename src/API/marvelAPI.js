@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { MD5 } from 'crypto-js';
 
-const BASE_URL = 'https://gateway.marvel.com/v1/public/';
-const API_KEY = '4ac51ffe073806ebf937e32961a744a4';
-const PRIVATE_KEY = '3969c9450749f7677defc74ff283ee72dc26a04c';
+const BASE_URL = 'http://gateway.marvel.com/v1/public/';
+const API_KEY = "4ac51ffe073806ebf937e32961a744a4"
+const PRIVATE_KEY = "3969c9450749f7677defc74ff283ee72dc26a04c"
 
 const generateHash = (timestamp) => {
   const hashString = timestamp + PRIVATE_KEY + API_KEY;
